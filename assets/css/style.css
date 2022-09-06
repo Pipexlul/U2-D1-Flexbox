@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
+
+:root {
+  --col-white: #ffffff;
+  --col-platinum: #e8ebe4;
+  --col-gray: #bec1bb;
+
+  --col-blue-bell: #a491d2;
+  --col-soap: #cdc3e6;
+  --col-pale-lavender: #d4dcff;
+
+  --col-dark-jungle: #1b1f21;
+  --col-outer-space: #444749;
+  --col-old-silver: #828485;
+
+  --font-menu: "Open Sans", sans-serif;
+  --font-content: "Roboto", sans-serif;
+
+  --font-size-large: 45px;
+  --font-size-medium: 16px;
+  --font-size-small: 14px;
+  --font-size-x-small: 10px;
+}
