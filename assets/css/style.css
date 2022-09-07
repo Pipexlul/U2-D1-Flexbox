@@ -20,6 +20,17 @@
   --font-size-medium: 16px;
   --font-size-small: 14px;
   --font-size-x-small: 10px;
+
+  --profile-img-max-size: 4rem;
+
+  --border-style: 1px solid var(--col-old-silver);
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .flex-container {
@@ -34,10 +45,104 @@
   flex-direction: column;
 }
 
+body {
+  height: 100vh;
+}
+
+body > div:first-child {
+  height: 100%;
+}
+
 .contacts-list {
   font-family: var(--font-menu);
+  flex-basis: 20%;
 }
 
 main {
   font-family: var(--font-content);
+  flex-basis: 80%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.contacts-list img {
+  clip-path: circle(50%);
+  max-width: var(--profile-img-max-size);
+  max-height: var(--profile-img-max-size);
+}
+
+.contacts-list img.user-img {
+  max-width: calc(var(--profile-img-max-size) * 0.75);
+  max-height: calc(var(--profile-img-max-size) * 0.75);
+}
+
+.contacts-list h3 {
+  font-size: var(--font-size-medium);
+  color: var(--col-dark-jungle);
+}
+
+.user-zone p {
+  font-size: var(--font-size-small);
+  color: var(--col-old-silver);
+}
+
+.user-zone > div:nth-child(2) {
+  flex-basis: 65%;
+}
+
+.user-zone > div:last-child {
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.user-zone i {
+  color: var(--col-old-silver);
+}
+
+.contacts-list > div {
+  flex-grow: 1;
+  border-bottom: var(--border-style);
+  border-right: var(--border-style);
+  padding: 0px 40px;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contacts-list > div:last-child {
+  border-bottom: none;
+}
+
+.contacts-list > div:has(button) {
+  flex-grow: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-list > div > button {
+  padding: 15px 60px;
+  background-color: var(--col-blue-bell);
+  color: var(--col-platinum);
+  border: none;
+}
+
+.contacts-list > div > button:hover {
+  background-color: var(--col-soap);
+}
+
+.contacts-list > div > button:focus {
+  background-color: var(--col-gray);
+}
+
+main img {
+  max-width: 300px;
+}
+
+main > h2 {
+  font-size: var(--font-size-large);
+}
+
+main > p {
+  font-size: var(--font-size-medium);
 }
